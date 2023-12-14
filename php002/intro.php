@@ -1,3 +1,5 @@
+<!-- 008 -->
+
 <?php
 
 $jonas = rand(5, 25);
@@ -22,9 +24,13 @@ echo $rezultatas;
 
 echo '<br>';
 
-
+// isset() tikrina ar yra kintamasis
 $kas = null;
 var_dump(isset($kas));
+echo '<br>';
+
+$kas1 = 5;
+var_dump(isset($kas1));
 echo '<br>';
 
 var_dump($kas2 ?? 8 === null);
@@ -40,6 +46,5 @@ for ($i = 1;$i <= 15;$i++){
     echo '<br>';
 }
 echo 'Ciklo pabaiga';
-
 
 

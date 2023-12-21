@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +11,6 @@
 <body>  
     <h1>Welcome to Forest</h1>
     <a href="login.php">Login</a> or <a href="register.php">Register</a>
-    
+    <?php    ?>
 </body>
 </html>

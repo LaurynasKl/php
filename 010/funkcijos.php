@@ -49,7 +49,7 @@ var_dump($sumResult);
 echo '<br>';
 
 function sumAll(...$number) :int{
-
+    return $number;
 }
 
 

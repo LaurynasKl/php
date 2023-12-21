@@ -15,12 +15,37 @@ foreach ($mas4x4 as $row) {
     }
     echo '<br>';
 }
+echo '<br>';
+
+foreach($mas4x4[0] as $key => $column){
+    foreach($mas4x4 as $row){
+        echo $row[$key] . ' ';
+    }
+    echo '<br>';
+}
+echo '<br>';
 
 $arrayFancy = [
     [5, 8, 8],
     [8 , [1, 2, 3], 8],
     [8, 8, [1, 2, 3]],
 ];
+
+
+foreach($arrayFancy as $row){
+    foreach($row as $cell){
+        if (is_array($cell)) {
+            foreach($cell as $value){
+                echo $value . ' ';
+            }
+        } else{
+            echo $cell . ' ';
+        }
+    }
+    echo '<br>';
+}
+
+echo '<br>';
 
 // print_r($arrayFancy);
 

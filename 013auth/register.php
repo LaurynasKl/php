@@ -11,7 +11,7 @@
         ];
         $users[] = $user;
         file_put_contents(__DIR__.'/data/users.ser', serialize($users));
-        header('Location: http://localhost/BIT-backend/php/013auth/index.php');
+        header('Location: http://localhost/BIT-backend/php/014auth/index.php');
         die;
     }
 ?>

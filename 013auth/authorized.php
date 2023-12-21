@@ -1,7 +1,7 @@
 <?php
     session_start();
     if (!isset($_SESSION['login']) || $_SESSION['login'] != 1) {
-        header('Location: http://localhost/BIT-backend/php/013auth/login.php');
+        header('Location: http://localhost/BIT-backend/php/014auth/login.php');
         die;
     }
 ?>

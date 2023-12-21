@@ -8,13 +8,13 @@
                 if ($user['password'] == sha1($_POST['password'])) {
                     $_SESSION['login'] = 1;
                     $_SESSION['name'] = $user['name'];
-                    header('Location: http://localhost/BIT-backend/php/013auth/authorized.php');
+                    header('Location: http://localhost/BIT-backend/php/014auth/authorized.php');
                     die;
                 }
             }
         }
         $_SESSION['error'] = 'Wrong email or password';
-        header('Location: http://localhost/BIT-backend/php/013auth/login.php');
+        header('Location: http://localhost/BIT-backend/php/014auth/login.php');
         die;
     }
 

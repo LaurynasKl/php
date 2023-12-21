@@ -9,5 +9,5 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == '1') {
     unset($_SESSION['login']);
     unset($_SESSION['name']);
 }
-header('Location: http://localhost/BIT-backend/php/013auth/index.php');
+header('Location: http://localhost/BIT-backend/php/014auth/index.php');
 die;

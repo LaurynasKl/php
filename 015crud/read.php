@@ -24,7 +24,7 @@
                         <b>Amount</b>
                     </div>
                     <div class="col-8">
-                        <a href="http://localhost/BIT-backend/php/015crud/show.php?id=<?= $box['boxId'] ?>" class="btn btn-outline-success btn-sm">Show</a>
+                        <b>Action</b>
                     </div>
                 </div>
             </div>

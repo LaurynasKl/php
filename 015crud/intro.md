@@ -13,4 +13,5 @@ Read - visos informacijos atvaizdavimas               method GET
 Show - dalies informacijos atvaizdavimas              method GET
 
 
-
+visi vaizdai rodomi su GET
+visi vaizdai vykdomi su POST

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,6 +44,8 @@
                         </div>
                         <div class="col-8">
                         <a href="http://localhost/BIT-backend/php/015crud/show.php?id=<?= $box['boxId'] ?>" class="btn btn-outline-success btn-sm">Show</a>
+                        <a href="http://localhost/BIT-backend/php/015crud/edit.php?id=<?= $box['boxId'] ?>" class="btn btn-outline-info btn-sm">Edit</a>
+                        <a href="http://localhost/BIT-backend/php/015crud/delete.php?id=<?= $box['boxId'] ?>" class="btn btn-outline-danger btn-sm">Delete</a>
                     </div>
                     </div>
                 </div>

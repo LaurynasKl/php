@@ -13,4 +13,6 @@ $boxes[] = [
 
 file_put_contents(__DIR__ . '/data/boxes.json', json_encode($boxes, JSON_PRETTY_PRINT));
 
+
+
 header('Location: http://localhost/BIT-backend/php/015crud/read.php');

@@ -12,6 +12,7 @@
 <body>
 
     <?php require __DIR__ . '/parts/nav.php' ?>
+    <?php require __DIR__ . '/parts/msg.php' ?>
 
     <?php $id = $_GET['id'] ?? 0;
     $boxes = json_decode(file_get_contents(__DIR__ . '/data/boxes.json'), true);

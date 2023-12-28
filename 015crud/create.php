@@ -13,6 +13,8 @@
 <body>
 
     <?php require __DIR__ . '/parts/nav.php' ?>
+    <?php require __DIR__ . '/parts/msg.php' ?>
+
 
     <div class="container mt-5">
         <div class="row">

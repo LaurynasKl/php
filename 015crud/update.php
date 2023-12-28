@@ -9,7 +9,7 @@ if (!$id) {
     exit;
 }
 
-$boxes - json_decode(file_get_contents(__DIR__ . '/data/boxes.json'), true);
+$boxes = json_decode(file_get_contents(__DIR__ . '/data/boxes.json'), true);
 
 foreach ($boxes as $index => $box) {
     if ($box['boxId'] == $id) {

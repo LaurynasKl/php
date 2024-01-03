@@ -4,8 +4,16 @@ class Bebras {
 
     public $spalva = 'ruda';
     private $svoris = 'nezinomas';
-    private $ugis = 1.5;
+    private $ugis = 1.0;
 
+
+    public function __construct() {
+        echo '<br> Bebras atejo <br>';
+    }
+
+    public function __destruct() {
+        echo '<br> Bebras isejo <br>';
+    }
 
     public function __get($prop) {
         return match ($prop) {
@@ -14,8 +22,39 @@ class Bebras {
             'uodega' => $this->kokiaUodega(),
             default => null,
         };
-
     }
+
+    public function __set($prop, $val) {
+        if ($prop == 'ugis') {
+            if ($val < 0.8 || $val > 1.0) {
+                echo 'Blogai ivestas ugis';
+                return;
+            }
+            $this->ugis = $val;
+        }
+    }
+
+
+
+    
+    public function __toString() {
+        return "<br>Bebro spalva: $this->spalva, ugis: $this->ugis";
+    }
+
+    public function __invoke() {
+        echo '<br> Bebras sako: <br>';
+        echo 'Labas <br>';
+    }
+
+
+    public function __serialize(): array {
+        return [
+            'ugis' => $this->ugis,
+            'svoris' => $this->svoris
+        ];
+    }
+
+
 
     private function kokiaUodega() {
         return 'uodega: ' . rand(20, 30) . ' cm';
@@ -47,9 +86,7 @@ class Bebras {
     }
 
 
-
     public function pasverti() {
         $this->svoris = rand(5, 45);
     }
-
 }

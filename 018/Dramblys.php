@@ -1,12 +1,19 @@
 <?php
 
-class Dramblys {
+class Dramblys extends ManoAfrika{
  
     public $pavadinimas = 'Dramblys';
     public $spalva = 'pilkas';
     public $svoris = 'nezinomas';
+    public $socialinisTinkas = 'Instagramas';
 
-    public $zemynas = 'Afrika';
-    public $gyventojai = 1000000000;
+
+    public function __construct() {
+        echo 'Labas Drambli <br>';
+    }
+
+    // public function __construct() {
+    //     echo $this->mano . '<br>';
+    // }
 
 }

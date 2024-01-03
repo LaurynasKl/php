@@ -1,12 +1,22 @@
 <?php
 
-class Krokodilas {
+class Krokodilas extends ManoAfrika{
  
     public $pavadinimas = 'Krokodilas';
     public $slapva = 'zalias';
     public $svoris = 'nezinomas';
+    public $socialinisTinkas = 'TikTok';
 
-    public $zemynas = 'Afrika';
-    public $gyventojai = 1000000000;
+    
+    public function __construct() {
+        parent::__construct();
+        echo 'Labas Krokodile <br>';
+    }
+
+
+    public function padainuok() {
+        echo 'Krokodilas dainuoja <br>';
+        parent::padainuok();
+    }
 
 }
